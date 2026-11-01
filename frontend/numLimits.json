@@ -1,0 +1,17 @@
+{
+  "Product_Weight": {
+    "min": 4.0,
+    "median": 12.66,
+    "max": 22.0
+  },
+  "Product_Allocated_Area": {
+    "min": 0.004,
+    "median": 0.056,
+    "max": 0.298
+  },
+  "Product_MRP": {
+    "min": 31.0,
+    "median": 146.74,
+    "max": 266.0
+  }
+}
