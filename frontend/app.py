@@ -17,16 +17,16 @@ BACKEND_URL = "http://backend:7860"
 st.title("SuperKart Product Sales Forcaster")
 
 # Input fields for product and store data
-Product_Weight = st.number_input("Product Weight", 
+Product_Weight = st.number_input("Product Weight",
                                  min_value=0.0,
                                  value=numLimits["Product_Weight"]["median"])
 w = numLimits["Product_Weight"]
 if Product_Weight < w["min"] or Product_Weight > w["max"]:
     st.warning(f"Weight is outside the training range ({w['min']}–{w['max']}). "
                "The prediction may be less reliable.")
-    
+
 Product_Sugar_Content = st.selectbox("Product Sugar Content", options["Product_Sugar_Content"])
-Product_Allocated_Area = st.number_input("Product Allocated Area", 
+Product_Allocated_Area = st.number_input("Product Allocated Area",
                                  min_value=0.0,
                                  value=numLimits["Product_Allocated_Area"]["median"],
                                  max_value = 1.0,
@@ -37,8 +37,8 @@ if Product_Allocated_Area < w["min"] or Product_Allocated_Area > w["max"]:
     st.warning(f"Product Allocated Area is outside the training range ({w['min']}–{w['max']}). "
                "The prediction may be less reliable.")
 Product_Type = st.selectbox("Product Type", options["Product_Type"])
-Product_MRP = st.number_input("Product MRP", 
-                              min_value=0.0, 
+Product_MRP = st.number_input("Product MRP",
+                              min_value=0.0,
                               value=numLimits["Product_MRP"]["median"])
 w = numLimits["Product_MRP"]
 if Product_MRP < w["min"] or Product_MRP > w["max"]:
