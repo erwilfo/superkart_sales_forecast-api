@@ -1,6 +1,5 @@
 
 # Import libraries
-import numpy as np
 import joblib  # For loading the serialized model
 import pandas as pd  # For data manipulation
 from flask import Flask, request, jsonify  # For creating the Flask API
@@ -25,7 +24,7 @@ def home():
 def predict_sales():
     """
     This function handles POST requests to the '/v1/predict' endpoint.
-    It expects a JSON payload containing property details and returns
+    It expects a JSON payload containing product and store details and returns
     the predicted sales forecast as a JSON response.
     """
     # Get JSON data from the request
