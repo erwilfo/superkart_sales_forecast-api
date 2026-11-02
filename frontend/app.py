@@ -1,8 +1,7 @@
 import streamlit as st
-import pandas as pd
 import requests
 
-# Load options fo dropdowns
+# Load options for dropdowns
 import json
 with open("options.json") as f:
     options = json.load(f)
@@ -14,7 +13,7 @@ with open("numLimits.json") as f:
 BACKEND_URL = "http://backend:7860"
 
 # Set the title of the Streamlit app
-st.title("SuperKart Product Sales Forcaster")
+st.title("SuperKart Product Sales Forecaster")
 
 # Input fields for product and store data
 Product_Weight = st.number_input("Product Weight",
