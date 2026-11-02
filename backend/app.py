@@ -8,7 +8,7 @@ from flask import Flask, request, jsonify  # For creating the Flask API
 # Initialize Flask app with a name
 superkart_api = Flask("SuperKart Sales Forecast") # Name of the app
 
-# Load the trained churn prediction model
+# Load the trained sales forecast model
 model = joblib.load("superkart_regression_model_v1_0.joblib") # Location of the serialized model
 
 # Define a route for the home page
